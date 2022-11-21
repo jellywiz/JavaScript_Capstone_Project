@@ -1,5 +1,4 @@
+import displayImage from './module/displayImg.js';
 import '../style.css';
 
-const a = document.querySelector('body');
-
-a.innerHTML += 'Hello World';
+document.addEventListener('DOMContentLoaded', displayImage(0, 'image'));
