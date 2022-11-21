@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -52,6 +58,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 .container .left-side {
