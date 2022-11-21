@@ -1,3 +1,75 @@
-h1 {
-  color: purple;
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  color: #009eff;
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  color: #009eff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer > p > a {
+  color: #009eff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline black;
+}
+
+footer {
+  background-color: #ffe15d;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: #eff5f5;
+  padding: 100px 0;
+}
+
+.header {
+  background-color: #ffe15d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .left-side {
+  width: 370px;
+  color: #c539b4;
+}
+
+.container p {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.container img {
+  height: 400px;
+  width: auto;
+}
+
+.main-films {
+  height: 200px;
 }

@@ -1,35 +1,67 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Headline
-description
+# JavaScript_Capstone_Project
+
+This is a capstone project for javascript module for microverse, the main objective of this project are:
+
+- Use JavaScript to make websites dynamic and build basic single page apps.
+- Use ES6 syntax.
+- Use ES6 modules.
+- Use callbacks and promises.
+- Use webpack.
+- Apply JavaScript best practices and language style guides in code.
+- Use AAA pattern for unit tests.
+- Write units tests for a JavaScript app.
+- Follow Gitflow.
+- Solve simple git conflicts.
+- Send and receive data from an API.
+- Use API documentation.
+- Understand and use JSON.
+- Make JavaScript code asynchronous.
+- Perform a code review for a team member.
 
 ## Built With
-Technologies
+
+- JavaScript
+- Webpack
+- HTML and CSS
+- Jest for testing
+- [The Studio Ghibli API](https://ghibliapi.herokuapp.com/)
 
 # Live Demo
+
 [Demo](Link)
 
 ## Getting Started
+
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
-   run the following commands in your terminal
-  - git clone https://github.com/jellywiz/webpack-template.git
-  - git checkout main
+
+run the following commands in your terminal
+
+- git clone https://github.com/jellywiz/webpack-template.git
+- git checkout main
+
 ### Install
-   you can install the following linters into your proejct through node, by these commands:
-  - Light House: npm install -g @lhci/cli@0.7.x
-  - Webhint: npm install --save-dev hint@7.x
-  - Stylelint: npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x    stylelint-csstree-validator@1.x
-  - ESLint: npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-  - Node packages: npm install, for the rest of the packages.
+
+you can install the following linters into your proejct through node, by these commands:
+
+- Light House: npm install -g @lhci/cli@0.7.x
+- Webhint: npm install --save-dev hint@7.x
+- Stylelint: npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+- ESLint: npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+- Node packages: npm install, for the rest of the packages.
+
 ### Deployment
-  you can deploy your project through github pages.
-  - make a repo for your project on github.
-  - go to your project settings.
-  - click on pages.
-  - select the desired branch to deploy.
-  - click save.
+
+you can deploy your project through github pages.
+
+- make a repo for your project on github.
+- go to your project settings.
+- click on pages.
+- select the desired branch to deploy.
+- click save.
 
 ## Author
 
@@ -55,5 +87,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-
