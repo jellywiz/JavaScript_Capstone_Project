@@ -15,7 +15,7 @@ export default async function displayMovies(number) {
           <p>${hour}h ${minutes} min</p>
         </div>
         <div class="movie-buttons">
-          <button class="like-button">Like</button>
+          <button class="like-button" data-index-number="${i}">Give a thumbs up</button>
           <button class="comment-button" data-index-number="${i}">Comment</button>
         </div>
       </div>`;
