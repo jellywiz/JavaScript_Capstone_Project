@@ -40,6 +40,10 @@ export async function displayModal(number) {
       hideModal();
     }
   });
+
+  
 }
+
+
 
 export default displayModal;
