@@ -13,3 +13,21 @@ moviesContainer.addEventListener('click', (e) => {
     displayModal(target.getAttribute('data-index-number'));
   }
 });
+
+// uTwt6FRnbbTssMmx6qrV
+
+// const fetchAPI = () => {
+//   fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       name: 'My cool new game',
+//     }),
+//     headers: {
+//       'Content-type': 'application/json; charset=UTF-8',
+//     },
+//   })
+//     .then((response) => response.text())
+//     .then((json) => console.log(json));
+// };
+
+// fetchAPI();
