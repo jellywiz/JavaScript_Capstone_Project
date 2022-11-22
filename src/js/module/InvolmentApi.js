@@ -17,4 +17,18 @@ export default class InvolvementAPI {
     const data = await response.json();
     return data;
   }
+
+  async postLikes() {
+    const response = await fetch(`${this.url}${this.key}/likes`, {
+      method: 'POST',
+      body: JSON.stringify({
+        item_id: '1',
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+    const data = await response.json();
+    return data;
+  }
 }
