@@ -11,4 +11,10 @@ export default class InvolvementAPI {
     const data = await response.text();
     return data;
   }
+
+  async getLikes() {
+    const response = await fetch(`${this.url}${this.key}/likes`);
+    const data = await response.json();
+    return data;
+  }
 }
