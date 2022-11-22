@@ -266,4 +266,5 @@ form {
   border-radius: 100px;
   font-size: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
