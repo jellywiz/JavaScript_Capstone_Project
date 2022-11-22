@@ -1,7 +1,7 @@
 export default class InvolvementAPI {
   constructor() {
     this.url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
-    this.appId = 'uTwt6FRnbbTssMmx6qrV';
+    this.key = 'uTwt6FRnbbTssMmx6qrV';
   }
 
   async getId() {
@@ -13,13 +13,13 @@ export default class InvolvementAPI {
   }
 
   async getLikes() {
-    const response = await fetch(`${this.url}${this.appId}/likes`);
+    const response = await fetch(`${this.url}${this.key}/likes`);
     const data = await response.json();
     return data;
   }
 
   async postLikes() {
-    const response = await fetch(`${this.url}${this.appId}/likes`, {
+    const response = await fetch(`${this.url}${this.key}/likes`, {
       method: 'POST',
       body: JSON.stringify({
         item_id: '1',
@@ -33,13 +33,13 @@ export default class InvolvementAPI {
   }
 
   async getComments() {
-    const response = await fetch(`${this.url}${this.appId}/comments`);
+    const response = await fetch(`${this.url}${this.key}/comments`);
     const data = await response.json();
     return data;
   }
 
   async postComments(comment) {
-    const response = await fetch(`${this.url}${this.appId}/comments`, {
+    const response = await fetch(`${this.url}${this.key}/comments`, {
       method: 'POST',
       body: JSON.stringify({
         item_id: '1',
