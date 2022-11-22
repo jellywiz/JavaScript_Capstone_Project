@@ -1,10 +1,7 @@
-const displayImage = (number, section) => {
-  fetch('https://ghibliapi.herokuapp.com/films')
-    .then((response) => response.json())
-    .then((data) => {
-      const imageContainer = document.querySelector('.container-image');
-      imageContainer.innerHTML += `<img src="${data[number + 2][section]}" />`;
-    });
-};
+import movieApi from './movieApi.js';
+import { imageContainer } from './elements.js';
 
-export default displayImage;
+export default async function displayImage(number) {
+  const data = await movieApi.fetchallmovies();
+  imageContainer.innerHTML += `<img src="${data[number].image}" />`;
+}
