@@ -1,16 +1,8 @@
 export default class InvolvementAPI {
   constructor() {
     this.url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
-    this.key = 'uTwt6FRnbbTssMmx6qrV';
+    this.key = 'LmgrRFKQop0R1bb9Hah3';
     this.headers = { 'Content-type': 'application/json; charset=UTF-8' };
-  }
-
-  async getId() {
-    const response = await fetch(`${this.url}`, {
-      method: 'POST',
-    });
-    const data = await response.text();
-    return data;
   }
 
   async addLikes(id) {
