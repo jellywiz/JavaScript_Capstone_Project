@@ -1,7 +1,7 @@
-import MovieApi from './movieApi.js';
-import { involvement } from './callClass.js';
-import { modalBg, modalContainer, body } from './elements.js';
-import renderComments from './commentRender.js';
+import MovieApi from '../API/movieApi.js';
+import { involvement } from '../callClass.js';
+import { modalBg, modalContainer, body } from '../elements.js';
+import renderComments from '../module/commentRender.js';
 
 export const hideModal = () => {
   modalBg.style.display = 'none';
