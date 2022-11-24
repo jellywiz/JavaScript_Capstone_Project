@@ -11,10 +11,14 @@ export default class ItemCounter {
 
   // this function gets the number of movies in the database
   getItems() {
-    document.querySelectorAll('.movie-container').forEach(() => {
+    const count = document.querySelectorAll('.movie-container');
+    count.forEach(() => {
       this.items = this.addItems();
     });
-    document.querySelector('#moviecount').innerHTML = `Number of Movies (${this.items})`;
-    return this.items;
+    return count.length;
+  }
+
+  setItems() {
+    document.querySelector('#moviecount').innerHTML = `Movies (${this.items})`;
   }
 }
