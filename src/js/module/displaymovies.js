@@ -22,4 +22,5 @@ export default async function displayMovies(number) {
       </div>`;
   }
   counter.getItems();
+  counter.setItems();
 }
