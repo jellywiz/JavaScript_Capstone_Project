@@ -2,6 +2,7 @@ export default class InvolvementAPI {
   constructor() {
     this.url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
     this.key = 'LmgrRFKQop0R1bb9Hah3';
+    this.headers = { 'Content-type': 'application/json; charset=UTF-8' };
   }
 
   async addLikes(id) {
@@ -37,12 +38,11 @@ export default class InvolvementAPI {
       username: UserName,
       comment,
     });
+
     await fetch(`${this.url}${this.key}/comments`, {
       method: 'POST',
       body,
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
+      headers: this.headers,
     });
   }
 }

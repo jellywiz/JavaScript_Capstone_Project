@@ -1,5 +1,7 @@
 import MovieApi from './movieApi.js';
+import { involvement } from './callClass.js';
 import { modalBg, modalContainer, body } from './elements.js';
+import renderComments from './commentRender.js';
 
 export const hideModal = () => {
   modalBg.style.display = 'none';
@@ -27,12 +29,25 @@ export async function displayModal(number) {
       </div>
     </div>
     <p class="description indicator">Description: <span>${data.description}</span></p>
+    <div class="comments">
+    <h4 id"comments-header"></h4> 
+    </div>
     <form>
-          <input type="text" id="name" placeholder="Your name">
-          <input type="text" id="comment" placeholder="Comment">
-          <button type="submit" id="submit">Submit</button>
+          <input class="user-input" id="name" type="text" data-index-number="${number}" placeholder="Your name" required>
+          <textarea class="message-input" id="comment" data-index-number="${number}" placeholder="Your comment" required></textarea>
+          <button class="like-button" id="submit">Submit</button>
         </form>
     `;
+  const userInput = document.querySelector('.user-input');
+  const messageInput = document.querySelector('.message-input');
+  const form = document.querySelector('form');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await involvement.postComments(messageInput.value, userInput.value, `item${number}`);
+    await renderComments(number);
+    messageInput.value = '';
+    userInput.value = '';
+  });
 
   modalBg.addEventListener('click', (e) => {
     const { target } = e;
@@ -40,6 +55,7 @@ export async function displayModal(number) {
       hideModal();
     }
   });
+  await renderComments(number);
 }
 
 export default displayModal;
