@@ -1,3 +1,4 @@
+/* eslint-disable */
 import MovieApi from './movieApi.js';
 import { imageContainer } from './elements.js';
 

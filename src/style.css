@@ -33,7 +33,7 @@ a {
   cursor: pointer;
 }
 
-footer>p>a {
+footer > p > a {
   color: black;
   text-decoration: none;
 }
@@ -207,7 +207,6 @@ form {
 
 .modal-content {
   position: relative;
-  height: 90vh;
   width: 50vw;
   background-image: url('https://i.pinimg.com/originals/9e/bc/13/9ebc1375866c51ada767a9a405820a1a.gif');
   background-size: cover;
@@ -226,7 +225,7 @@ form {
   margin-top: 50px;
   height: 400px;
   width: 300px;
-  box-shadow: red 0px 0px 10px;
+  border: 2px solid red;
 }
 
 .information {
