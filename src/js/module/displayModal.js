@@ -1,4 +1,4 @@
-import movieApi from './movieApi.js';
+import MovieApi from './movieApi.js';
 import { modalBg, modalContainer, body } from './elements.js';
 
 export const hideModal = () => {
@@ -11,7 +11,7 @@ export async function displayModal(number) {
   modalBg.style.display = 'flex';
   modalContainer.style.display = 'flex';
   body.style.overflow = 'hidden';
-  const data = await movieApi.fetchmovie(number);
+  const data = await MovieApi.fetchmovie(number);
   modalContainer.innerHTML = `
   <button data-close-button class="close-button">&times;</button>
     <img src="${data.image}"/>

@@ -1,5 +1,6 @@
 import movieApi from './movieApi.js';
 import { listContainer } from './elements.js';
+import { counter } from './callClass.js';
 
 export default async function displayMovies(number) {
   const data = await movieApi.fetchallmovies();
@@ -10,7 +11,7 @@ export default async function displayMovies(number) {
     listContainer.innerHTML += `<div class="movie-container">
       <img class="movie-image" src="${data[i].image}" alt="${data[i].title}" data-index-number=${i}>
         <div class="movie-info">
-          <h3>${data[i].title}</h3>
+          <h3 class="movie-title">${data[i].title}</h3>
           <p>${data[i].release_date}</p>
           <p>${hour}h ${minutes} min</p>
         </div>
@@ -20,4 +21,5 @@ export default async function displayMovies(number) {
         </div>
       </div>`;
   }
+  counter.getItems();
 }
