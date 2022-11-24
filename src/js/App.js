@@ -4,6 +4,8 @@ import displayMovies from './module/displaymovies.js';
 import addLikes from './module/addLikes.js';
 import renderLikes from './module/likesRender.js';
 import { displayModal } from './module/displayModal.js';
+// eslint-disable-next-line no-unused-vars
+import logo from '../images/logo.png';
 
 const moviesContainer = document.querySelector('.main-films');
 
