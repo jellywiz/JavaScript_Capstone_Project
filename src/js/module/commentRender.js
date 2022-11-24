@@ -1,4 +1,4 @@
-import { commentCounter, involvement } from './callClass.js';
+import { commentCounter, involvement } from '../callClass.js';
 
 const renderComments = async (number) => {
   const commentsContainer = document.querySelector('.comments');

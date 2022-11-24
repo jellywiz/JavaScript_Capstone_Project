@@ -1,6 +1,6 @@
-import movieApi from './movieApi.js';
-import { listContainer } from './elements.js';
-import { counter } from './callClass.js';
+import movieApi from '../API/movieApi.js';
+import { listContainer } from '../elements.js';
+import { counter } from '../callClass.js';
 
 export default async function displayMovies(number) {
   const data = await movieApi.fetchallmovies();

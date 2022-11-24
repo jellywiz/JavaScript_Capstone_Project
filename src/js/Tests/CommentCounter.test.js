@@ -1,4 +1,4 @@
-import { commentCounter } from './src/js/module/callClass.js';
+import { commentCounter } from '../callClass.js';
 
 document.body.innerHTML = '<div class="comments"><h4 id"comments-header"></h4> </div>';
 const commentsListSelector = document.querySelector('.comments');

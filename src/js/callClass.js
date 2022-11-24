@@ -1,7 +1,7 @@
-import ItemCounter from './movieCounter.js';
-import InvolvementAPI from './InvolmentApi.js';
-import MovieApi from './movieApi.js';
-import CommentsCounter from './counterComment.js';
+import ItemCounter from './module/movieCounter.js';
+import InvolvementAPI from './API/InvolmentApi.js';
+import MovieApi from './API/movieApi.js';
+import CommentsCounter from './module/counterComment.js';
 
 const counter = new ItemCounter();
 const involvement = new InvolvementAPI();

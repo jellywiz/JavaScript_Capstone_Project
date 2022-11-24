@@ -1,4 +1,4 @@
-import { counter } from './src/js/module/callClass.js';
+import { counter } from '../callClass.js';
 
 document.body.innerHTML = '';
 

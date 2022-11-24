@@ -1,4 +1,4 @@
-import InvolvementAPI from './InvolmentApi.js';
+import InvolvementAPI from '../API/InvolmentApi.js';
 
 const api = new InvolvementAPI();
 
