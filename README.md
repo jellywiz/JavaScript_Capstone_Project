@@ -25,6 +25,7 @@ This is a capstone project for javascript module for microverse, the main object
 - Online version of the app: [Click Me](https://jellywiz.github.io/JavaScript_Capstone_Project/)
 - link to the kanban board: [Click Me](https://github.com/users/jellywiz/projects/1/)
 - Link to one of the Pull Requests ("Muzaffer Dler"): [Click Me](https://github.com/jellywiz/JavaScript_Capstone_Project/pull/25/)
+- Link to one of the Pull Requests ("Giorgi Bokuchava"): [Click Me](https://github.com/jellywiz/JavaScript_Capstone_Project/pull/31)
 
 ## Built With
 
