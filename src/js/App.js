@@ -1,5 +1,23 @@
 import '../style.css';
+import displayMovies from './view/displaymovies.js';
+import addLikes from './module/addLikes.js';
+import renderLikes from './module/likesRender.js';
+import { displayModal } from './view/displayModal.js';
+// eslint-disable-next-line no-unused-vars
+import logo from '../images/logo.png';
 
-const a = document.querySelector('body');
+const moviesContainer = document.querySelector('.main-films');
 
-a.innerHTML += 'Hello World';
+async function render() {
+  document.onload = await addLikes();
+  document.onload = await displayMovies(12);
+  document.onload = await renderLikes();
+  moviesContainer.addEventListener('click', (e) => {
+    const { target } = e;
+    if (target.matches('.movie-image') || target.matches('.comment-button')) {
+      displayModal(target.getAttribute('data-index-number'));
+    }
+  });
+}
+
+render();

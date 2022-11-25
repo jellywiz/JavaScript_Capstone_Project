@@ -1,3 +1,282 @@
-h1 {
-  color: purple;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  color: #009eff;
+  font-size: 25px;
+}
+
+h3 {
+  color: #009eff;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer > p > a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline black;
+}
+
+footer {
+  background-color: #009eff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.gifcen.com/wp-content/uploads/2022/09/sharingan-gif-12.gif");
+  height: 80vh;
+  background-size: cover;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: #eff5f5;
+  padding: 100px 0;
+}
+
+.header {
+  background-color: #009eff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40%;
+}
+
+.container .left-side {
+  width: 500px;
+  color: red;
+}
+
+.container p {
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+}
+
+.container img {
+  height: 400px;
+  width: auto;
+}
+
+.main-films {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 10px;
+  background-color: #eff5f5;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: #009eff 0px 0px 10px;
+}
+
+.movie-image {
+  border-radius: 5px;
+  height: 400px;
+  width: 280px !important;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.like-button {
+  font-family: 'Orbitron', sans-serif;
+  background-color: mediumseagreen;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: #009eff 0px 0px 10px;
+}
+
+.like-button:hover {
+  background-color: #009eff;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: #ffe15d 0px 0px 10px;
+}
+
+.comment-button {
+  background-color: red;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: #009eff 0px 0px 10px;
+}
+
+.comment-button:hover {
+  background-color: #009eff;
+  /* stylelint-disable-next-line length-zero-no-unit */
+  box-shadow: #c539b4 0px 0px 10px;
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  background: none;
+  color: red;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #c539b4;
+  scale: 1.2;
+  transition: 0.1s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.modal-bg {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 50vw;
+  background-image: url('https://i.pinimg.com/originals/9e/bc/13/9ebc1375866c51ada767a9a405820a1a.gif');
+  background-size: cover;
+  height: 100vh;
+  color: black;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+.modal-content img {
+  margin-top: 50px;
+  height: 400px;
+  width: 300px;
+  border: 2px solid red;
+}
+
+.information {
+  display: flex;
+  column-gap: 50px;
+  padding: 10px;
+  color: white;
+}
+
+.indicator {
+  font-weight: 700;
+}
+
+.indicator span {
+  font-weight: 300;
+}
+
+.comments {
+  color: white;
+}
+
+.description {
+  text-align: center;
+  margin: 0 30px;
+  color: white;
+  width: 350px;
+  padding: 10px;
+}
+
+#name {
+  width: 150%;
+  border: red solid 2px;
+  border-radius: 8px;
+  padding: 7px;
+}
+
+#comment {
+  width: 150%;
+  border: red solid 2px;
+  border-radius: 8px;
+  padding: 7px;
+  padding-bottom: 65%;
+}
+
+#submit {
+  background: red;
+  border: none;
+  width: 65%;
+  height: 40px;
+  border-radius: 100px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
