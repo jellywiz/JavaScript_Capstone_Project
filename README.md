@@ -20,6 +20,12 @@ This is a capstone project for javascript module for microverse, the main object
 - Make JavaScript code asynchronous.
 - Perform a code review for a team member.
 
+## Links
+
+Online version of the app: [Click Me](https://jellywiz.github.io/JavaScript_Capstone_Project/)
+link to the kanban board: [Click Me](https://github.com/users/jellywiz/projects/1/)
+Link to one of the Pull Requests ("Muzaffer Dler"): [Click Me](https://github.com/jellywiz/JavaScript_Capstone_Project/pull/25/)
+
 ## Built With
 
 - JavaScript
@@ -27,6 +33,7 @@ This is a capstone project for javascript module for microverse, the main object
 - HTML and CSS
 - Jest for testing
 - [The Studio Ghibli API](https://ghibliapi.herokuapp.com/)
+- [Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
 # Live Demo
 
@@ -38,41 +45,24 @@ This is a capstone project for javascript module for microverse, the main object
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+**To Create A Portfolio from this Repository feel free to contact me.**
 
-### Installation
+**To get a local copy up and running follow these simple steps.**
 
-**To make the project run in your local machine:**
-
-1. - You will need to set up or install webpack in your machine. Open the link bellow for set up.
-2. - https://webpack.js.org/guides/getting-started/#basic-setup
-
-**Installation of Packages.Json: Run the code bellow inside your terminal to install Packages.Json in your local machine.**
-
-1. npm install --save-dev stylelint stylelint-config-standard.
-2. { "extends": "stylelint-config-standard" }. 3- npx stylelint "\*_/_.css"
-
-### Deployment
-
-you can deploy your project through github pages.
-
-- make a repo for your project on github.
-- go to your project settings.
-- click on pages.
-- select the desired branch to deploy.
-- click save.
+- you can clone this repo by typing `git clone https://github.com/jellywiz/JavaScript_Capstone_Project.git`.
+- type `cd JavaScript_Capstone_Project.git` to access the project on terminal.
 
 ## Author
 
 👤 **Muzaffer Dler**
 
-- GitHub: [@githubhandle](https://github.com/jellywiz/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muzaffer-dler-473484205/)
+- GitHub: [@Muzaffer Dler](https://github.com/jellywiz/)
+- LinkedIn: [Muzaffer Dler](https://www.linkedin.com/in/muzaffer-dler-473484205/)
 
 👤 **Giorgi Bokuchava**
 
-- GitHub: [@githubhandle](https://github.com/Boku52500)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/giorgi-bokuchava-430252240/)
+- GitHub: [@Giorgi Bokuchava](https://github.com/Boku52500)
+- LinkedIn: [Giorgi Bokuchava](https://www.linkedin.com/in/giorgi-bokuchava-430252240/)
 
 ## 🤝 Contributing
 
