@@ -12,7 +12,7 @@ const moviesContainer = document.querySelector('.main-films');
 async function render() {
   document.onload = await addLikes();
   document.onload = await displayImage(0);
-  document.onload = await displayMovies(12);
+  document.onload = await displayMovies(20);
   document.onload = await renderLikes();
   moviesContainer.addEventListener('click', (e) => {
     const { target } = e;
